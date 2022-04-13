@@ -1,3 +1,4 @@
+/*body*/
 body {
   margin: 0 auto;
   padding: 0;
@@ -135,12 +136,15 @@ header nav .navright .bgbleu {
   display: flex;
   width: 100%;
   gap: 0.3rem;
-  font-size: 0.8rem;
-  color: rgba(223, 242, 255, 0.8745098039);
 }
 .sec3troisimg img {
   width: 100%;
 }
+.sec3troisimg h2 {
+  font-size: 0.8rem;
+  color: rgba(223, 242, 255, 0.8745098039);
+}
+
 .sec3seconddiv,
 .sec3thirddiv,
 .sec3fourthdiv {
@@ -174,6 +178,134 @@ header nav .navright .bgbleu {
   color: rgba(223, 242, 255, 0.2941176471);
   padding: 0.8rem;
   font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .navright {
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .banner img {
+    height: 13rem;
+  }
+
+  .sec1 {
+    padding: 2rem;
+  }
+  .sec1 p {
+    width: 70%;
+  }
+  .sec1 p:nth-last-child(1) {
+    padding-top: 0.6rem;
+  }
+
+  .sec2quatrediv {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .sec3quatrediv {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .sec3firstdiv {
+    text-align: center;
+    padding-right: 0rem;
+  }
+
+  footer .ftxt {
+    background-color: #3676bb;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-top: 1.5rem;
+    font-size: 0.7rem;
+  }
+  footer .icons {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+}
+/* max width 321px */
+@media (max-width: 320px) {
+  nav {
+    flex-direction: column;
+  }
+  nav .navleft {
+    display: none;
+  }
+  nav div {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .navright {
+    gap: 0rem;
+    padding: 1rem 0rem;
+    font-size: 1rem;
+  }
+
+  .banner img {
+    height: 12rem;
+  }
+
+  .sec1 {
+    font-size: 1rem;
+    padding: 1.4rem;
+  }
+  .sec1 p:nth-last-child(1) {
+    padding-top: 1rem;
+  }
+
+  .sec2quatrediv {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .sec3quatrediv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .sec3firstdiv {
+    text-align: center;
+    width: 80%;
+    padding-right: 2rem;
+  }
+
+  button {
+    border: none;
+    margin-bottom: 1.5rem;
+    color: red;
+  }
+
+  .sec3troisimg {
+    flex-direction: column;
+  }
+  .sec3troisimg h2 {
+    font-size: 1.5rem;
+  }
+
+  footer .ftxt {
+    padding-left: 0.8rem;
+    padding-right: 1rem;
+    margin-top: 1.5rem;
+    color: rgba(223, 242, 255, 0.2941176471);
+    font-size: 0.6rem;
+    flex-direction: column;
+  }
+
+  .ftxt h1 {
+    font-weight: lighter;
+    word-spacing: 0.5rem;
+    padding-top: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
