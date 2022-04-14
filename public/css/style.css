@@ -180,7 +180,7 @@ header nav .navright .bgbleu {
   font-size: 0.8rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .navright {
     gap: 0.5rem;
     font-size: 1rem;
@@ -228,8 +228,8 @@ header nav .navright .bgbleu {
     padding-bottom: 1.5rem;
   }
 }
-/* max width 321px */
-@media (max-width: 320px) {
+/* min width 321px - max width 767px */
+@media (min-width: 320px) and (max-width: 767px) {
   nav {
     flex-direction: column;
   }
